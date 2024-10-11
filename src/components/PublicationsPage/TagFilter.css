@@ -1,0 +1,18 @@
+.tag-filter {
+    margin-bottom: 20px;
+}
+
+.tag {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+    transition: background-color 0.3s;
+}
+
+.tag.selected {
+    background-color: #a41034;
+    color: white;
+}

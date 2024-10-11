@@ -1,0 +1,7 @@
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(100% - 22px); /* Adjust for padding and border */
+}

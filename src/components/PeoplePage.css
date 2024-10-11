@@ -1,0 +1,164 @@
+.people-page {
+    display: flex;
+    justify-content: center; /* This will center the .people-container */
+    background-color: #f5f5f5;
+}
+.people-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1150px; /* Adjust the width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+}
+
+/* Styles for the faculty list */
+.faculty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em; /* Adjust the space between cards as needed */
+  }
+  
+  /* Styles for individual faculty member cards */
+  .faculty-member {
+    /* Adding a flex container to align items vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 166.4px; /* Set the width of the card to match the image */
+  }
+  
+  /* Styles for faculty images */
+  .faculty-member img {
+    width: 166.4px; /* Exact width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+    margin-bottom: 5px; /* Space between image and text */
+  }
+  
+  /* Styles for the text information about the faculty */
+  .faculty-info {
+    text-align: center;
+  }
+  
+  /* Styles for the faculty name (h3) */
+  .faculty-info h3 {
+    margin: 5px 0;
+    font-size: 1em; /* Adjust font size as needed */
+  }
+  
+  .faculty-name-link:hover {
+    text-decoration: underline; /* Typically, links are underlined on hover for usability */
+  }
+
+  /* Styles for the faculty title and department (paragraph) */
+  .faculty-info p {
+    margin: 5px 0;
+    font-size: 1em; /* Adjust font size as needed */
+    color: #555; /* Adjust text color as needed */
+  }
+
+  .people-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 3em; /* Adjust the space between cards as needed */
+  }
+  
+  .people-member {
+    width: 250px;
+    display: flex;
+    flex-direction: row; /* Adjusts direction to row instead of column */
+    align-items: flex-start; /* Centers items vertically */
+  }
+  
+  .people-member img {
+    width: 100px; /* As per your previous request */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: Adds rounded corners to the image */
+    margin-right: 20px; /* Adds space between the image and the text */
+  }
+  
+  .people-info {
+    margin-right: -1em; 
+    text-align: left; /* Aligns the text to the left */
+  }
+  
+  .people-name-link {
+    color: black; /* Initial color */
+    text-decoration: none; /* No underline */
+  }
+
+  .people-name-link:link:hover {
+    text-decoration: underline; /* Typically, links are underlined on hover for usability */
+  }
+  
+  .people-name-link h3 {
+    margin: 0; /* Remove default margin from h3 */
+    margin-bottom: 0.25em;
+    font-size: 1rem; /* Adjust to match your design */
+  }
+  
+  .people-member p {
+    font-size: 1rem; /* Adjust to match your design */
+    color: #555; /* Adjust text color as needed */
+    line-height: 1.25em;
+    margin: 0; /* Adjust or remove margin as needed */
+  }  
+
+.sidebar {
+    flex: 0 0 200px;
+    padding: 20px;
+    
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 1em;
+    color: #A41034; /* Adjust the color as needed */
+    text-decoration: none; /* Removes underline */
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 25px; /* Space between sections */
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.alumni-list {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 3em; /* Adjust the space between cards as needed */
+}
+
+@media (max-width: 462px) {
+    .main-content {
+        margin-top: -1.5em;
+    }
+    /* ... */
+}
+
+/* Adjustments for the faculty grid display */
+/* You may need to add more CSS to style the faculty member list as a grid */

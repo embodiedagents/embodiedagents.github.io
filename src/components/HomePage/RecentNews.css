@@ -1,0 +1,61 @@
+.news-section {
+    background-color: #f5f5f5;
+    width: 100%; /* Adjust width as needed */
+    margin: auto;
+    text-align: center; /* This will center the title */
+    padding-left: 0.5em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+.news-title {
+    margin-bottom: 1em;
+    text-align: center; /* Centers the title */
+    font-size: 2em;
+    color: #4a4a4a;
+}
+
+.news-items-container {
+    max-width: 1000px; /* Adjust this value as needed for your max-width */
+    text-align: left;
+    margin-left: auto ; /* Centers the section horizontally */
+    margin-right: auto; /* Centers the section horizontally */
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 1.5rem; /* Space between news items */
+    align-items: baseline; /* Aligns items on their baseline */
+    color: #4a4a4a;
+}
+
+.news-date {
+    flex-basis: 150px; /* Adjust the width as necessary */
+    flex-shrink: 0; /* Prevents the date from shrinking */
+    margin-right: 1rem; /* Space after the date */
+}
+
+.news-content {
+    flex-grow: 1; /* Allows the content to fill the remaining space */
+}
+
+.news-content a {
+    color: #A41034; 
+    text-decoration: none; /* Optional: removes the underline from links */
+}
+
+.news-content a:hover {
+    text-decoration: underline; /* Optional: adds an underline on hover */
+}
+
+@media (max-width: 1023px) {
+    .news-date {
+        margin-right: -2.5em; /* Space after the date */
+    }
+
+    .news-item {
+        margin-left: 1.5em; /* Space between news items */
+        margin-right: 1.5em;
+        align-items: baseline; /* Aligns items on their baseline */
+    }
+}

@@ -1,0 +1,50 @@
+.research-page {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjust the space between cards */
+    padding: 20px 0;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional */
+    border-radius: 10px; /* Optional */
+    text-align: left;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional */
+    margin-bottom: 20px;
+}
+
+.project-card h2 {
+    color: #A41034;
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.project-card a {
+    color: #A41034;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+

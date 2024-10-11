@@ -1,0 +1,91 @@
+.research-highlights {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+/* .research-area h2 {
+    color: black;
+} */
+
+.researchtitle {
+    font-weight: 600;
+    color: black;
+    font-size: 1.25em; /* 1.5 times the size of the current font context */
+    /* Any additional styling you want for your title */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    margin-left: 0px;
+    justify-content: flex-end;
+}
+
+.research-tab-container {
+    display: flex;
+    align-items: center;
+    border-radius: 4px; /* Optional: if you want rounded corners */
+    overflow: hidden; /* Ensures the content respects the border radius */
+    max-width: 1150px; /* Adjust this value as needed for your max-width */
+    margin-left: auto ; /* Centers the section horizontally */
+    margin-right: auto; /* Centers the section horizontally */
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 446.4px;
+    height: auto;
+    border-radius: 4px; /* Optional: if you want rounded corners on the image */
+}
+
+.research-highlights p {
+    line-height: 1.5; /* spacing between lines of text */
+    color: #4a4a4a;
+    margin-top: 1.5em;
+}
+
+/* max-width and margin-left should add up to 700px */
+.research-content {
+    max-width: 650px; /* Adjust as necessary */
+    margin-left: 50px;
+    text-align: left; /* Align the text to the left */
+}
+
+.research-link {
+    color: #A41034;
+    text-decoration: none;
+}
+
+.research-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1215px) {
+
+    .research-tab-container {
+        max-width: 1000px; /* Adjust this value as needed for your max-width */
+    }
+    .research-content {
+        max-width: 550px; /* Adjust as necessary */
+        margin-left: 50px;
+        text-align: left; /* Align the text to the left */
+    }
+    /* If you have other specific styles that affect the width or offset of these elements, reset them here */
+}
+
+@media (max-width: 1023px) {
+    .research-tab-container {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .research-content {
+        max-width: 100%;
+        order: -1; /* This will move the image container to the top */
+        justify-content: flex-start;
+        margin-left: 0px;
+        margin-bottom: 1em;
+    }
+    
+}

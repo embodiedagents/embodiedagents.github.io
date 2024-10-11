@@ -1,0 +1,148 @@
+.publications-list {
+    padding: 0px;
+}
+
+.pubjournalyear {
+    font-style: italic;
+    margin-bottom: 0.15em; /* Adjust this value as needed to increase/decrease space */
+}
+
+.pubpeople {
+    margin-bottom: 0.15em; /* Adjust this value as needed to increase/decrease space */
+}
+
+.publication-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.publication-row {
+    display: flex;
+    align-items: flex-start;
+    position: relative; /* Needed for absolute positioning of the abbrev box */
+    /* padding-left: 60px; /* Adjust based on the width of your abbrev-box */
+}
+
+.box-wrapper {
+    width: 8em; /* Fixed width: abbrev box width plus margin */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-shrink: 0; /* Prevent shrinking */
+    /* margin-right: 5em; /* Space between this wrapper and the publication details */
+}
+
+.abbrev-box {
+    left: 0; /* Aligns the abbrev-box to the far left */
+    top: 0;
+    margin-left: 0em;
+    margin-right: auto; /* Pushes the box to the left and margin to the right */
+    background-color: #64b5f6; /* Blue */
+    text-align: center;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.8em;
+
+}
+
+.award-box {
+    background-color: #ffd700; /* Example color for awards, like gold */
+    padding: 0.2em 0.8em;
+    margin-top: 0.4em; /* Spacing between the abbrev-box and the award-box */
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-right: auto;
+
+    /* Other styles as needed */
+}
+
+.pubtitle {
+    font-weight: bold;
+    color: #333; 
+    font-size: 1em; /* 1.5 times the size of the current font context */
+    padding-bottom: 0.25em;
+}
+
+.publication-buttons {
+    display: flex; /* Use flexbox to layout tags */
+    flex-wrap: wrap; /* Allow tags to wrap to the next line */
+    gap: 0.5em; /* Optional: adds space between tags */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 0.4em 0.8em;
+    margin-right: 1em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.pdf {
+    background-color: #e57373; /* Red */
+}
+
+.video {
+    background-color: #ed1b34; 
+}
+
+.highlight {
+    background-color: #81c784; /* Green */
+}
+
+.code {
+    background-color: #ba68c8; /* Purple */
+}
+
+.award {
+    background-color: #ffd54f; /* Amber */
+}
+
+.news {
+    background-color: #26a69a; /* Teal */
+}
+
+.project {
+    background-color: #eb7d00; /* Orange */
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 802px) {
+    
+    .publication-row {
+        /* Change the direction to column so items stack vertically */
+        flex-direction: column;
+
+    }
+
+    .box-wrapper {
+        /* Align the boxes horizontally */
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .abbrev-box, .award-box {
+        align-self: center;
+        margin-top: 0em;
+    }
+
+    .button {
+        margin-bottom: 0.5em;
+    }
+}

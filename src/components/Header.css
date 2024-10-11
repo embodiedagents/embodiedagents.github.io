@@ -1,0 +1,137 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: center; /* Align the container center */
+    background-color: #fff; /* Adjust the color to match your design */
+    
+}
+
+.active {
+    color: blue; /* or any style you want for the active link */
+  }  
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 95px; /* clamp(80px, calc(80px + (15 * ((100vw - 1024px) / (1215 - 1024)))), 95px); */ /*This is for the height to continuously decrease from 95 to 80px from 1215 - 1024px) */
+    max-width: 1150px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* This will center the container */
+}
+
+.logo img {
+    width: 300px; /* Adjust the size to fit your design */
+    height: auto;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.navigation a:hover {
+    color: #A41034;
+}
+
+.hamburger {
+    display: none; /* Hide by default, will be displayed in mobile view */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 16px;
+    height: 15px;
+    position: absolute; /* Absolute positioning relative to its parent */
+    top: 7px; /* Align to the top of the parent */
+    right: 7px; /* Align to the right of the parent */
+    padding: 10px; /* Padding to ensure the touch area is large enough */
+}
+
+.hamburger span {
+    display: block;
+    height: 1px; /* Thinner line for less bold look */
+    width: 100%; /* Full width of the parent */
+    background: #333; /* Line color */
+    transition: all 0.3s ease; /* Smooth transition for animations */
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(3.5px, 3.5px); /* Adjusted for smaller size */
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0; /* Middle line disappears */
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(3.5px, -3.5px); /* Adjusted for smaller size */
+}
+
+/* Medium Devices (Tablets): 768px to 991px */
+@media (max-width: 1215px) {
+    .header-container {
+        max-width: 1000px;
+        /* ... other responsive adjustments ... */
+    }
+    /* ... */
+}
+
+/* Responsive Styles */
+@media (max-width: 1023px) {
+    .header-container {
+        margin-left: 2em;
+        height: 80px;
+        max-width: 1000px;
+        /* ... other responsive adjustments ... */
+    }
+    .hamburger {
+        display: flex; /* Show hamburger icon in mobile view */
+    }
+    .navigation {
+        position: absolute;
+        top: 80px; /* Adjust this value based on your header's height */
+        left: 0;
+        width: 100%;
+        background: #fff; /* Background color of dropdown */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Optional: adds a shadow */
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+
+        display: none; /* Hide the navigation initially */
+    }
+    .navigation.visible {
+        display: flex; /* Show navigation when active */
+    }
+    .navigation ul {
+        width: 100%; /* Full width */
+        flex-direction: column;
+    }
+    .navigation li {
+        width: 100%; /* Full width */
+        text-align: left; /* Align text to the left */
+    }
+    .navigation a {
+        color: #4a4a4a;
+        width: 100%; /* Full width */
+        padding: 0px; /* Add padding */
+        line-height: 2;
+        text-decoration: none; /* Remove underline from links */
+
+    }
+}
+
+/* ... other styles ... */

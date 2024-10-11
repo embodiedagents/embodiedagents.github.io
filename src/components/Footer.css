@@ -1,0 +1,76 @@
+.footer {
+  padding: 2em;
+  padding-bottom: 1em; /* Increase this value to add more space, or decrease it to reduce space */
+  position: relative;
+}
+
+.footer-heading-container {
+  max-width: 1150px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Centers the containers */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align children to the top */
+  max-width: 1150px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Centers the container */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: flex-end; /* Aligns content to the right */
+}
+
+p {
+  margin: 0 0 0.5em 0; /* Adjust bottom margin as needed for spacing */
+  line-height: 1; /* Single line spacing */
+}
+
+h2 {
+  color: #A41034;
+  margin: 0 0 1em 0; /* Adjust as needed, adds space below the heading */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1023px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 1em; /* Adds space between the left and right sections on smaller screens */
+  }
+
+  .footer-right {
+    margin-bottom: 0; /* Removes extra space below the right section on smaller screens */
+  }
+}
+
+.postal-code {
+  word-break: keep-all; /* This will prevent the number from breaking mid-number */
+}
+
+@media (max-width: 409px) {
+  .postal-code {
+      display: inline-block; /* Treat the postal code as a block to add margin */
+      margin-top: 0.5em; /* Adjust the top margin to control spacing after wrap */
+  }
+}
+

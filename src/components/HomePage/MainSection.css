@@ -1,0 +1,88 @@
+.main-section {
+    background-color: #f5f5f5;
+    display: flex; /* Added to layout the children side by side */
+    align-items: center; /* This ensures vertical centering of children */
+    
+}
+
+.mainsection-tab-container {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    border-radius: 4px; /* Optional: if you want rounded corners */
+    overflow: hidden; /* Ensures the content respects the border radius */
+    max-width: 1150px; /* Adjust this value as needed for your max-width */
+    margin-left: auto; /* Centers the section horizontally */
+    margin-right: auto; /* Centers the section horizontally */
+}
+
+.main-section-content {
+    flex: 1;
+    margin-right: -125px;
+    text-align: left; /* Align the text to the left */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    margin-left: 0px;
+    justify-content: flex-end;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 461px;
+    height: auto;
+    border-radius: 4px; /* Optional: if you want rounded corners on the image */
+}
+
+.maintitle {
+    font-weight: 400;
+    color: #A41034; 
+    font-size: 1.5em; /* 1.5 times the size of the current font context */
+    /* Any additional styling you want for your title */
+}
+
+.main-section p {
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-top: 1.5em;
+}
+
+.main-section a {
+    color: #A41034;
+    text-decoration: none;
+}
+
+.main-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1215px) {
+
+    .mainsection-tab-container {
+        max-width: 1000px; /* Adjust this value as needed for your max-width */
+        height: 375px;
+    }
+
+    .main-section-content {
+        padding-right: 100px;
+    }
+
+    /* If you have other specific styles that affect the width or offset of these elements, reset them here */
+}
+
+@media (max-width: 1023px) {
+    .mainsection-tab-container {
+        flex-direction: column;
+        padding: 2em;
+        height: auto;
+    }
+    .main-section-content {
+        margin-bottom: 1em;
+    }
+    .image-container {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+}
